@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Impressive Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Impressive Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="profile-card">
+                <div class="profile-inner">
+                    <div class="profile-front">
+                        <img src="/portfolio-project/src/IMAGE/moi.jpeg" alt="Ma photo" class="profile-img">
+                    </div>
+                    <div class="profile-back">
+                        <h3>Nom Prénom</h3>
+                        <p>Âge : 19 ans</p>
+                        <p>Niveau scolaire : 2eme annee classe prepa integree</p>
+                        <p>École : Université euromedfes</p>
+                        <p>Filière : EIDIA</p>
+                    </div>
+                </div>
+            </div>
+            <p>Hi! I'm a passionate web developer dedicated to crafting beautiful and functional websites. I thrive on learning new technologies and enhancing my skills.</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>WEBSITE IRT</h3>
+                <p>A brief description of project 1 showcasing my skills and creativity.</p>
+                <video controls width="100%" poster="images/miniature1.jpg">
+                    <source src="/portfolio-project/src/VIDEO/IRT.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project">
+                <h3>WEBSITE USDM</h3>
+                <p>A brief description of project 1 showcasing my skills and creativity.</p>
+                <video controls width="100%" poster="images/miniature1.jpg">
+                    <source src="/portfolio-project/src/VIDEO/USDM.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="project">
+                <h3>WEBSITE COACH</h3>
+                <p>A brief description of project 3 emphasizing the impact and results achieved.</p>
+                <video controls width="100%" poster="images/miniature1.jpg">
+                    <source src="/portfolio-project/src/VIDEO/COACH.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-links" style="margin-top:2rem; text-align:center;">
+                <a href="https://github.com/Youssef-NOTHING" target="_blank" style="margin:0 1rem; color:#a3a3ff; font-size:2rem;">
+                    <img src="portfolio-project\src\IMAGE\GITHUB.png" alt="GitHub" style="width:32px; vertical-align:middle;">
+                </a>
+                <a href="https://linkedin.com/in/ton-linkedin" target="_blank" style="margin:0 1rem; color:#a3a3ff; font-size:2rem;">
+                    <img src="portfolio-project\src\IMAGE\LINKEDIN.png" alt="LinkedIn" style="width:32px; vertical-align:middle;">
+                </a>
+                <a href="https://instagram.com/ton-instagram" target="_blank" style="margin:0 1rem; color:#a3a3ff; font-size:2rem;">
+                    <img src="portfolio-project\src\IMAGE\INSTAGRAM.png" alt="Instagram" style="width:32px; vertical-align:middle;">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Impressive Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
