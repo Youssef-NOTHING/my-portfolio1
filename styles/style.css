@@ -1,9 +1,17 @@
 body {
-    background: linear-gradient(135deg, #181824 0%, #23243a 100%);
-    color: #f3f3f3;
+    background: linear-gradient(135deg, #f8fafc 0%, #e3e7fd 100%);
+    color: #22253a; /* Texte plus foncé */
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+/* Pour les titres et paragraphes */
+h1, h2, h3, h4, h5, h6, p, label {
+    color: #c2d8ee;
+}
+p{
+    color: #e2e2e7; /* Texte des paragraphes légèrement plus clair */
 }
 
 /* 3D header effect */
@@ -189,8 +197,8 @@ section, .project, form {
 }
 
 .profile-img {
-    width: 140px;
-    height: 140px;
+    width: 180px;      /* Augmente la largeur */
+    height: 180px;     /* Augmente la hauteur */
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #a3a3ff;
@@ -202,4 +210,103 @@ section, .project, form {
     color: #a3a3ff;
     padding: 1.5rem;
     text-align: center;
+}
+
+/* School Cards */
+.school-cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.school-card {
+    background: rgba(40, 40, 60, 0.95);
+    border-radius: 14px;
+    box-shadow: 0 4px 24px #23243a88;
+    padding: 1.2rem 1.5rem;
+    min-width: 200px;
+    max-width: 240px;
+    color: #a3a3ff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, backdrop-filter 0.3s, background 0.3s;
+    backdrop-filter: none;
+}
+
+.school-card:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 8px 32px #a3a3ff55;
+    backdrop-filter: blur(6px);
+    background: rgba(40, 40, 60, 0.7);
+}
+
+/* Animated background circles */
+.background-effects {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+    filter: blur(30px);
+    animation: moveCircle 12s infinite alternate;
+}
+
+.circle1 {
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, #a3a3ff 60%, #fff0 100%);
+    top: 10%; left: 5%;
+    animation-delay: 0s;
+}
+
+.circle2 {
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, #ffb3fa 60%, #fff0 100%);
+    top: 60%; left: 70%;
+    animation-delay: 2s;
+}
+
+.circle3 {
+    width: 180px; height: 180px;
+    background: radial-gradient(circle, #7fffd4 60%, #fff0 100%);
+    top: 40%; left: 30%;
+    animation-delay: 4s;
+}
+
+.circle4 {
+    width: 260px; height: 260px;
+    background: radial-gradient(circle, #ffe29a 60%, #fff0 100%);
+    top: 80%; left: 10%;
+    animation-delay: 6s;
+}
+
+@keyframes moveCircle {
+    0% { transform: translateY(0) scale(1);}
+    100% { transform: translateY(40px) scale(1.1);}
+}
+
+/* Mets tout le contenu au-dessus des effets */
+header, section, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Pour les liens sociaux */
+.social-links img {
+    width: 48px;      /* Agrandit les logos */
+    height: 48px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.15);
 }
