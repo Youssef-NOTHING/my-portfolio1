@@ -174,7 +174,7 @@ footer{text-align:center;padding:20px;background:var(--card);}
 }
 
 .portfolio-card video{
-  width:100%;
+  width:80%;
   border-radius:15px;
   max-height:200px; /* taille max pour s’adapter à mobile */
   object-fit:cover;
