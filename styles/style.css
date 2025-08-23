@@ -1020,13 +1020,13 @@ header, section, footer {
 .nav-toggle .bar {
     width: 28px;
     height: 4px;
-    background: #f8faff;
+    background: #6c63ff;
     margin: 4px 0;
     border-radius: 2px;
     transition: 0.4s;
 }
 
-/* Animation pour l'icône burger en croix */
+/* Animation burger/croix */
 .nav-toggle.active .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -1037,7 +1037,7 @@ header, section, footer {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Responsive : affiche le bouton et cache le menu */
+/* Responsive : affiche le bouton sur mobile */
 @media (max-width: 700px) {
     .nav-toggle {
         display: flex;
