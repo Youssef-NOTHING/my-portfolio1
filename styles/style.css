@@ -1106,4 +1106,21 @@ header, section, footer {
         color: #fff;
         transform: scale(1.07);
     }
+    .close-menu {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+    .close-toggle {
+        background: none;
+        border: none;
+        font-size: 2.2rem;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.2rem 1.2rem 0.2rem 0;
+        transition: color 0.2s;
+    }
+    .close-toggle:hover {
+        color: #48c6ef;
+    }
 }
