@@ -1107,6 +1107,12 @@ header, section, footer {
         transform: scale(1.07);
     }
     .close-menu {
+        display: none;
+    }
+    .close-menu {
+        display: block;
+    }
+    .close-menu {
         width: 100%;
         text-align: right;
         margin-bottom: 1rem;
