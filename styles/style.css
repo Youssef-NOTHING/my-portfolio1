@@ -1127,13 +1127,13 @@ header, section, footer {
         color: #fff;
         transform: scale(1.07);
     }
-    .close-menu {
-        display: none;
-    }
+    /* Affiche la croix uniquement sur mobile */
+.close-menu {
+    display: none;
+}
+@media (max-width: 700px) {
     .close-menu {
         display: block;
-    }
-    .close-menu {
         width: 100%;
         text-align: right;
         margin-bottom: 1rem;
