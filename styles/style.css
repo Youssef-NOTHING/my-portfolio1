@@ -221,3 +221,35 @@ footer{text-align:center;padding:20px;background:var(--card);}
   .about img{width:150px;height:150px;}
   .skill-card{width:120px;}
 }
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:var(--card);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+footer .socials{
+  display:flex;
+  gap:20px;
+}
+
+footer .socials a img{
+  width:30px;
+  height:30px;
+  transition:transform 0.3s;
+}
+
+footer .socials a img:hover{
+  transform:scale(1.2);
+}
+@media(max-width:480px){
+  footer .socials a img{
+    width:25px;
+    height:25px;
+  }
+}
+
