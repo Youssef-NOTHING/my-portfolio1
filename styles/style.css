@@ -17,14 +17,31 @@ p, input, textarea, button, .home-subtitle, .project, .school-card, .profile-bac
 
 /* 3D header effect */
 header {
-    background: rgba(30, 30, 50, 0.95);
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 30, 50, 0.85);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-bottom: 2px solid #2e2e4d;
-    perspective: 600px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 2rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
     text-shadow: 0 4px 16px #000, 0 1px 0 #444;
     transform: rotateY(-10deg);
     transition: transform 0.5s;
@@ -36,25 +53,23 @@ header h1:hover {
 
 /* Navigation */
 nav ul {
-    list-style: none;
     display: flex;
     gap: 2rem;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav a {
-    color: #a3a3ff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #f8faff;
     font-size: 1.1rem;
-    transition: color 0.3s, text-shadow 0.3s;
-    text-shadow: 0 2px 8px #23243a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
 nav a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px #a3a3ff;
+    color: #48c6ef;
 }
 
 /* Container */
