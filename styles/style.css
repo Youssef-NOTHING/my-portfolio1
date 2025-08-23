@@ -1056,7 +1056,7 @@ header, section, footer {
         box-shadow: 0 8px 32px #23243a88;
         border-radius: 0 0 16px 16px;
         padding: 1rem 0;
-        z-index: 150;
+        z-index: 9999; /* <-- Mets le menu tout devant */
     }
     nav ul.open {
         display: flex;
