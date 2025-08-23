@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio Youssef Ultra-Pro</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --primary:#ff4e50;
@@ -19,7 +19,7 @@
   --text:#f5f5f5;
   --card:#1e1e1e;
 }
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:var(--bg);color:var(--text);transition:var(--transition);overflow-x:hidden;}
 a{text-decoration:none;color:inherit;}
 header{
@@ -30,7 +30,7 @@ header nav ul{display:flex;gap:30px;list-style:none;}
 header nav ul li a:hover{color:var(--primary);}
 .dark-toggle{cursor:pointer;padding:10px;border-radius:50%;background:var(--card);display:flex;align-items:center;justify-content:center;transition:var(--transition);}
 
-/* HERO PRO DEVELOPER */
+/* HERO PRO DEVELOPER DESIGN AVANCÉ */
 .hero{
   position:relative;
   height:100vh;
@@ -43,20 +43,29 @@ header nav ul li a:hover{color:var(--primary);}
   color:#fff;
 }
 .hero-content{z-index:2;}
-.hero h1,.hero p,.hero button{opacity:0;transform:translateY(50px);transition:all 1s;}
+.hero h1{
+  font-size:3rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.hero p{
+  font-size:1.2rem;
+  margin-top:15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
 .hero button{
   padding:12px 30px;
-  margin-top:20px;
+  margin-top:25px;
   border-radius:30px;
   border:none;
   background:var(--primary);
   cursor:pointer;
   font-weight:600;
   transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 .hero button:hover{
   transform:scale(1.05);
-  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 .hero-img{
   position:absolute;
@@ -66,6 +75,14 @@ header nav ul li a:hover{color:var(--primary);}
   opacity:0.15;
   pointer-events:none;
 }
+.floating-shapes circle{
+  animation: float 6s ease-in-out infinite alternate;
+}
+@keyframes float{
+  0%{transform:translateY(0px);}
+  100%{transform:translateY(30px);}
+}
+/* Typing effect */
 @keyframes typing { from{width:0;} to{width:100%;} }
 .typing{
   display:inline-block;
@@ -160,7 +177,7 @@ footer{text-align:center;padding:20px;background:var(--card);}
 <div class="dark-toggle" id="theme-toggle">🌓</div>
 </header>
 
-<!-- HERO PRO DEVELOPER -->
+<!-- HERO PRO DEVELOPER DESIGN AVANCÉ -->
 <section class="hero" id="hero">
   <div class="hero-content">
     <h1 class="typing">Salut, je suis Youssef</h1>
@@ -169,6 +186,11 @@ footer{text-align:center;padding:20px;background:var(--card);}
       Voir mes projets
     </button>
   </div>
+  <svg class="floating-shapes" width="100%" height="100%" preserveAspectRatio="none">
+    <circle cx="10%" cy="20%" r="60" fill="rgba(255,78,80,0.2)"/>
+    <circle cx="80%" cy="30%" r="100" fill="rgba(249,212,35,0.2)"/>
+    <circle cx="50%" cy="80%" r="80" fill="rgba(255,78,80,0.15)"/>
+  </svg>
   <img src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png" alt="Développeur" class="hero-img">
 </section>
 
@@ -185,14 +207,10 @@ footer{text-align:center;padding:20px;background:var(--card);}
 <section id="skills">
 <h2>Compétences</h2>
 <div class="skills">
-<div class="skill-card"><h3>HTML</h3>
-<svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
-<div class="skill-card"><h3>CSS</h3>
-<svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
-<div class="skill-card"><h3>JavaScript</h3>
-<svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
-<div class="skill-card"><h3>React.js</h3>
-<svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
+<div class="skill-card"><h3>HTML</h3><svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
+<div class="skill-card"><h3>CSS</h3><svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
+<div class="skill-card"><h3>JavaScript</h3><svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
+<div class="skill-card"><h3>React.js</h3><svg width="100" height="100"><circle cx="50" cy="50" r="40"/></svg></div>
 </div>
 </section>
 
