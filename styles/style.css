@@ -6,12 +6,13 @@ body {
     padding: 0;
 }
 
-/* Pour les titres et paragraphes */
-h1, h2, h3, h4, h5, h6, p, label {
-    color: #c2d8ee;
+/* Titres et paragraphes plus clairs */
+h1, h2, h3, h4, h5, h6, label {
+    color: #f8faff !important; /* Blanc très clair */
 }
-p{
-    color: #e2e2e7; /* Texte des paragraphes légèrement plus clair */
+
+p, input, textarea, button, .home-subtitle, .project, .school-card, .profile-back {
+    color: #f3f6ff !important; /* Gris très clair */
 }
 
 /* 3D header effect */
