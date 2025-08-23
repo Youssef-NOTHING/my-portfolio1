@@ -35,7 +35,7 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    gap: 0.5rem; /* Ajoute un petit espace entre les éléments */
 }
 
 header h1 {
@@ -1014,7 +1014,10 @@ header, section, footer {
     border: none;
     cursor: pointer;
     z-index: 200;
-    margin-left: 1rem;
+    margin-left: 0;      /* Fix: enlève l'espace à gauche */
+    margin-right: 0;     /* Fix: enlève l'espace à droite */
+    padding: 0;          /* Fix: enlève le padding */
+    position: relative;  /* Fix: pour bien placer dans le header */
 }
 
 .nav-toggle .bar {
