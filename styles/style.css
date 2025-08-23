@@ -58,6 +58,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    z-index: 9999;
 }
 
 nav a {
@@ -408,7 +409,7 @@ form {
 /* Mets tout le contenu au-dessus des effets */
 header, section, footer {
     position: relative;
-    z-index: 1;
+    z-index: auto;
 }
 
 /* Accueil Section */
@@ -1127,13 +1128,13 @@ header, section, footer {
         color: #fff;
         transform: scale(1.07);
     }
-    /* Affiche la croix uniquement sur mobile */
-.close-menu {
-    display: none;
-}
-@media (max-width: 700px) {
+    .close-menu {
+        display: none;
+    }
     .close-menu {
         display: block;
+    }
+    .close-menu {
         width: 100%;
         text-align: right;
         margin-bottom: 1rem;
