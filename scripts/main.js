@@ -76,3 +76,32 @@ form.addEventListener('submit', async (e) => {
     console.error('Erreur :', error);
   }
 });
+
+const carousel = document.querySelector('.testimonial-carousel');
+  const cards = document.querySelectorAll('.testimonial-card');
+  const leftArrow = document.querySelector('.arrow-left');
+  const rightArrow = document.querySelector('.arrow-right');
+
+  let index = 0;
+  const total = cards.length;
+
+  function showSlide(i) {
+    if(i >= total) index = 0;
+    else if(i < 0) index = total - 1;
+    else index = i;
+
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  rightArrow.addEventListener('click', () => {
+    showSlide(index + 1);
+  });
+
+  leftArrow.addEventListener('click', () => {
+    showSlide(index - 1);
+  });
+
+  // Auto-slide
+  setInterval(() => {
+    showSlide(index + 1);
+  }, 5000); // Change slide every 5 seconds
