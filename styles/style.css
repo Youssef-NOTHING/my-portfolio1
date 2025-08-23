@@ -191,6 +191,48 @@ footer{text-align:center;padding:20px;background:var(--card);}
   color: #333;
 }
 
+.skills-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+}
+
+.skill span {
+  font-weight: 600;
+  color: #555;
+}
+
 /* Arrows */
 .arrow {
   position: absolute;
