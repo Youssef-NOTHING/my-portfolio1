@@ -241,6 +241,66 @@ section, .project, form {
     background: rgba(40, 40, 60, 0.7);
 }
 
+/* Effet de fond subtil pour chaque section */
+section {
+    position: relative;
+    background: rgba(255,255,255,0.04);
+    border-radius: 24px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 32px rgba(76, 110, 245, 0.08);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 2;
+}
+
+/* Animation d’apparition pour les titres */
+section h2 {
+    animation: fadeInUp 1.2s cubic-bezier(.25,.8,.25,1);
+    font-size: 2.3rem;
+    color: #6c63ff;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 12px #23243a55;
+}
+
+/* Animation sur les cartes scolaires */
+.school-card {
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 24px #6c63ff22;
+    background: rgba(245,246,250,0.08);
+}
+.school-card:hover {
+    transform: scale(1.05) rotateZ(-2deg);
+    box-shadow: 0 8px 32px #6c63ff44;
+}
+
+/* Animation sur les projets */
+.project {
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 24px #48c6ef22;
+    background: rgba(245,246,250,0.08);
+}
+.project:hover {
+    transform: scale(1.03) rotateY(4deg);
+    box-shadow: 0 12px 36px #48c6ef44;
+}
+
+/* Animation sur le formulaire de contact */
+form {
+    animation: fadeInUp 1.2s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 4px 24px #6c63ff22;
+    background: rgba(245,246,250,0.12);
+}
+
+/* Animation sur les liens sociaux */
+.social-links img {
+    transition: transform 0.3s, filter 0.3s;
+    filter: drop-shadow(0 2px 8px #6c63ff88);
+}
+.social-links a:hover img {
+    transform: scale(1.15) rotateZ(-8deg);
+    filter: drop-shadow(0 4px 16px #48c6efcc);
+}
+
 /* Animated background circles */
 .background-effects {
     position: fixed;
@@ -297,18 +357,6 @@ section, .project, form {
 header, section, footer {
     position: relative;
     z-index: 1;
-}
-
-/* Pour les liens sociaux */
-.social-links img {
-    width: 48px;      /* Agrandit les logos */
-    height: 48px;
-    vertical-align: middle;
-    transition: transform 0.3s;
-}
-
-.social-links a:hover img {
-    transform: scale(1.15);
 }
 
 /* Accueil Section */
