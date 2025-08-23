@@ -42,7 +42,24 @@ header nav ul li a:hover{color:var(--primary);}
 section{padding:100px 50px;opacity:0;transform:translateY(50px);transition:all 1s;}
 h2{font-size:2rem;margin-bottom:40px;text-align:center;position:relative;}
 h2::after{content:'';width:60px;height:3px;background:var(--primary);display:block;margin:10px auto 0;border-radius:3px;}
+.about img {
+  width: 250px;         /* Taille fixe ou ajustable */
+  height: 250px;        /* Même hauteur pour garder un carré */
+  object-fit: cover;    /* Recadrage automatique si l'image dépasse */
+  border-radius: 50%;   /* Cercle parfait */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Ombre légère */
+  transition: transform 0.3s;
+}
 
+.about img:hover {
+  transform: scale(1.05); /* Effet zoom léger au survol */
+}
+@media(max-width:768px){
+  .about img {
+    width: 180px;
+    height: 180px;
+  }
+}
 /* SKILLS */
 .skills{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
 .skill-card{position:relative;background:var(--card);padding:20px;border-radius:20px;width:200px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s,box-shadow 0.3s;}
