@@ -364,6 +364,18 @@ header, section, footer {
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
     text-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #fff;
+    animation: typing 2.5s steps(30, end), blinkCaret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blinkCaret {
+    50% { border-color: transparent }
 }
 
 .home-subtitle {
@@ -410,4 +422,38 @@ header, section, footer {
     border: 4px solid #fff;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+/* Effet de particules lumineuses */
+.particles {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.particle {
+    position: absolute;
+    width: 8px; height: 8px;
+    background: radial-gradient(circle, #fff 60%, #6c63ff 100%);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: floatParticle 8s infinite linear;
+}
+@keyframes floatParticle {
+    0% { transform: translateY(0) scale(1);}
+    100% { transform: translateY(-120px) scale(1.3);}
+}
+
+/* Bouton flottant avec icône */
+.home-btn::before {
+    content: "✨";
+    margin-right: 0.7rem;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    animation: sparkle 1.2s infinite alternate;
+}
+@keyframes sparkle {
+    0% { filter: brightness(1);}
+    100% { filter: brightness(2);}
 }
