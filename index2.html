@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; }
+
+    /* ---------- NAV ---------- */
+    nav {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff6600;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ff6600;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #ff6600, #ff3300);
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    header .btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      background: #fff;
+      color: #ff3300;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    header .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ff3300;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .about img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .about-text {
+      flex: 1;
+    }
+
+    /* ---------- PROJECTS ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project h3 {
+      padding: 1rem;
+      font-size: 1.2rem;
+      color: #ff3300;
+    }
+    .project p {
+      padding: 0 1rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+    }
+    .contact button {
+      padding: 1rem;
+      background: #ff3300;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    .contact button:hover {
+      opacity: 0.9;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* ---------- DARK MODE ---------- */
+    .dark-mode {
+      background: #1e1e1e;
+      color: #eee;
+    }
+    .dark-mode nav {
+      background: #111;
+    }
+    .dark-mode footer {
+      background: #111;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="logo">MonPortfolio</div>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Salut, je suis Youssef 👋</h1>
+    <p>Développeur web & étudiant en ingénierie</p>
+    <button class="btn">Voir mes projets</button>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>À propos</h2>
+    <div class="about">
+      <img src="https://via.placeholder.com/250" alt="Photo de profil">
+      <div class="about-text">
+        <p>Je suis étudiant en ingénierie passionné par le développement web, l’IA et les projets digitaux. J’aime transformer des idées en sites modernes et performants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Projet 1">
+        <h3>Projet 1</h3>
+        <p>Site web pour un club de basketball avec gestion des joueurs et des matchs.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Projet 2">
+        <h3>Projet 2</h3>
+        <p>Application de boutique en ligne (React + LocalStorage) avec panier.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Projet 3">
+        <h3>Projet 3</h3>
+        <p>Portfolio en ligne moderne et responsive avec dark mode.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contactez-moi</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 MonPortfolio | Créé par Youssef</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Toggle Dark Mode
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
