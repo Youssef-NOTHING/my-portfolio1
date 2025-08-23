@@ -42,3 +42,10 @@ setInterval(()=>{
     slideIndex=(slideIndex+1)%totalSlides;
     slides.style.transform=`translateX(-${slideIndex*100}%)`;
 },4000);
+
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', ()=>{
+    navLinks.classList.toggle('active');
+});
