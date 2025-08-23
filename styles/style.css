@@ -8,11 +8,11 @@ body {
 
 /* Titres et paragraphes plus clairs */
 h1, h2, h3, h4, h5, h6, label {
-    color: #f8faff !important; /* Blanc très clair */
+    color: #ffffff !important; /* Blanc très clair */
 }
 
 p, input, textarea, button, .home-subtitle, .project, .school-card, .profile-back {
-    color: #f3f6ff !important; /* Gris très clair */
+    color: #070707 !important; /* Gris très clair */
 }
 
 /* 3D header effect */
@@ -505,4 +505,49 @@ header, section, footer {
 @keyframes sparkle {
     0% { filter: brightness(1);}
     100% { filter: brightness(2);}
+}
+
+/* Section About - couleurs et fond incroyable */
+#about {
+    background: linear-gradient(120deg, #48c6ef 0%, #6c63ff 100%);
+    color: #f8faff !important;
+    border-radius: 32px;
+    box-shadow: 0 12px 48px #6c63ff44, 0 2px 24px #48c6ef44;
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#about h2, #about h3 {
+    color: #fff !important;
+    text-shadow: 0 4px 24px #23243a88;
+}
+
+#about p, #about .profile-back, #about .school-card {
+    color: #f8faff !important;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 180px; height: 180px;
+    background: radial-gradient(circle, #fff 40%, #6c63ff 80%, transparent 100%);
+    opacity: 0.25;
+    z-index: 0;
+}
+
+#about::after {
+    content: "";
+    position: absolute;
+    bottom: -80px; right: -80px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, #48c6ef 60%, transparent 100%);
+    opacity: 0.18;
+    z-index: 0;
+}
+
+#about .container {
+    position: relative;
+    z-index: 1;
 }
