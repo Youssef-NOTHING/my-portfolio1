@@ -1014,18 +1014,13 @@ header, section, footer {
     border: 2px solid #6c63ff;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 200;
-    margin-left: 0;
-    margin-right: 0;
+    z-index: 2000;
     padding: 0;
-    position: relative;
+    position: fixed;      /* Fixe le bouton en haut à droite */
+    top: 16px;
+    right: 16px;
     box-shadow: 0 2px 12px #6c63ff44;
     transition: background 0.3s, border 0.3s;
-}
-
-.nav-toggle:hover {
-    background: rgba(76,99,255,0.35);
-    border-color: #48c6ef;
 }
 
 .nav-toggle .bar {
@@ -1050,60 +1045,8 @@ header, section, footer {
     background: #48c6ef;
 }
 
-/* MENU SPECIAL */
 @media (max-width: 700px) {
     .nav-toggle {
         display: flex;
-    }
-    nav {
-        width: 100vw;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        background: rgba(76,99,255,0.85);
-        backdrop-filter: blur(12px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        box-shadow: 0 8px 32px #23243a88;
-        border-radius: 0 0 32px 32px;
-        padding-top: 90px;
-        z-index: 9999;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-40px);
-        transition: opacity 0.4s, transform 0.4s;
-    }
-    nav ul.open {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-    nav ul li {
-        margin: 1.2rem 0;
-    }
-    nav a {
-        font-size: 1.3rem;
-        padding: 0.8rem 2rem;
-        border-radius: 18px;
-        background: rgba(255,255,255,0.08);
-        color: #fff;
-        box-shadow: 0 2px 12px #48c6ef44;
-        transition: background 0.3s, color 0.3s, transform 0.2s;
-        text-align: center;
-        display: block;
-        width: 80vw;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-    nav a:hover {
-        background: #48c6ef;
-        color: #fff;
-        transform: scale(1.07);
     }
 }
