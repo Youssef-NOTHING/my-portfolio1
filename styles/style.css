@@ -129,6 +129,31 @@ h2::after{content:'';width:60px;height:3px;background:var(--primary);display:blo
 .contact button{padding:12px;border-radius:30px;border:none;background:var(--primary);color:#fff;cursor:pointer;transition:0.4s;}
 .contact button:hover{transform:scale(1.05);}
 footer{text-align:center;padding:20px;background:var(--card);}
+/* Testimonials responsive */
+.testimonial-slide{
+  display:flex;
+  transition:transform 0.5s ease, opacity 0.5s ease;
+}
+.testimonial{
+  min-width:100%;
+  padding:30px;
+  box-sizing:border-box;
+}
+@media(max-width:768px){
+  .testimonial-slide{
+    flex-direction:column;
+  }
+  .testimonial{
+    width:100%;
+    padding:20px;
+  }
+}
+@media(max-width:480px){
+  .testimonial{
+    padding:15px;
+    font-size:0.9rem;
+  }
+}
 
 /* MEDIA QUERIES */
 @media(max-width:1024px){
