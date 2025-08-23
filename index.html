@@ -1,207 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Impressive Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Youssef Ultra-Pro</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Youssef Boukhmiss</h1>
-            <header>
-  <nav>
-    <div class="nav-toggle">☰</div>
-    <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><span class="close-toggle">✖</span></li>
-    </ul>
-  </nav>
-  <button id="theme-toggle">🌙</button>
+<body data-theme="light">
+
+<header>
+<div class="logo"><strong>Youssef</strong></div>
+<nav>
+<ul>
+  <li><a href="#hero">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#timeline">Parcours</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#testimonials">Testimonials</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="dark-toggle" id="theme-toggle">🌓</div>
 </header>
 
-    </header>
-    <!-- Section d'accueil à placer juste après <header> -->
-    <section id="home" class="home-section">
-    <div class="container">
-        <div class="home-content">
-            <img src="IMAGE/moi.jpeg" alt="Ma photo" class="home-profile-img">
-            <h1 class="home-title">Bienvenue sur mon Portfolio</h1>
-            <p class="home-subtitle">Je suis Youssef Boukhmiss, étudiant en EIDIA à l'Université EuromedFes.<br>
-            Passionné par le développement web et la création de projets innovants.</p>
-            <a href="#about" class="home-btn">Découvrir mon parcours</a>
-            <a href="CV.pdf" class="home-btn" download>Télécharger mon CV</a>
-        </div>
-        <div class="particles">
-            <div class="particle" style="top:10%;left:20%;animation-delay:0s;"></div>
-            <div class="particle" style="top:30%;left:70%;animation-delay:2s;"></div>
-            <div class="particle" style="top:60%;left:40%;animation-delay:1s;"></div>
-            <div class="particle" style="top:80%;left:80%;animation-delay:3s;"></div>
-            <div class="particle" style="top:50%;left:10%;animation-delay:1.5s;"></div>
-        </div>
-    </div>
-</section>
-    <div class="background-effects">
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
-        <div class="circle circle4"></div>
-    </div>
-    
-    <section id="about">
-        <div class="container">
-            <!-- Cercles animés pour le background -->
-            <div class="animated-bg-circle circle1"></div>
-            <div class="animated-bg-circle circle2"></div>
-            <div class="animated-bg-circle circle3"></div>
-            <div class="animated-bg-circle circle4"></div>
-            <h2>About Me</h2>
-            <div class="profile-card">
-                <div class="profile-inner">
-                    <div class="profile-front">
-                        <img src="IMAGE/moi.jpeg" alt="Ma photo" class="profile-img">
-                    </div>
-                    <div class="profile-back">
-                        <h3>Nom Prénom</h3><br>
-                        BOUKHMISS YOUSSEF
-                        <p>Âge : 20 ans</p>
-                        <p>Niveau scolaire : 2eme annee classe prepa integree</p>
-                        <p>École : Université EuromedFes</p>
-                        <p>Filière : EIDIA</p>
-                    </div>
-                </div>
-            </div>
-            <h3>Hi! I'm a passionate web developer dedicated to crafting beautiful and functional websites. I thrive on learning new technologies and enhancing my skills.</h3>
-            
-            <div class="school-cards">
-                <div class="school-card">
-                    <h4>Première Année Bac</h4>
-                    <p>Année : 2022-2023</p>
-                    <p>Lycée MohammedV</p>
-                    <p>Filière : Sciences Math</p>
-                </div>
-                <div class="school-card">
-                    <h4>Deuxième Année Bac</h4>
-                    <p>Année : 2023-2024</p>
-                    <p>Lycée MohammedV</p>
-                    <p>Filière : Sciences Physiques</p>
-                </div>
-                <div class="school-card">
-                    <h4>Première Année Faculté</h4>
-                    <p>Année : 2024-2025</p>
-                    <p>Université EuromedFes</p>
-                    <p>Filière : EIDIA</p>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-    
-    <!-- À placer avant la section projets -->
-<section id="skills">
-  <div class="container">
-    <h2>Compétences</h2>
-    <div class="skill-bar">
-      <span>HTML</span>
-      <div class="bar"><div class="progress" style="width:90%"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>CSS</span>
-      <div class="bar"><div class="progress" style="width:85%"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>JavaScript</span>
-      <div class="bar"><div class="progress" style="width:75%"></div></div>
-    </div>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1 class="typing">Salut, je suis Youssef</h1>
+    <p class="role">Développeur Web & Créatif | Frontend / Backend</p>
+    <button onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'});">
+      Voir mes projets
+    </button>
   </div>
+  <svg class="floating-shapes" width="100%" height="100%" preserveAspectRatio="none">
+    <circle cx="10%" cy="20%" r="60" fill="rgba(255,78,80,0.2)"/>
+    <circle cx="80%" cy="30%" r="100" fill="rgba(249,212,35,0.2)"/>
+    <circle cx="50%" cy="80%" r="80" fill="rgba(255,78,80,0.15)"/>
+  </svg>
+  <img src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png" alt="Développeur" class="hero-img">
 </section>
-    
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <div class="project-title">WEBSITE IRT</div>
-                <div class="project-description">A brief description of project 1 showcasing my skills and creativity.</div>
-                <div class="project-links">
-                    <a href="https://github.com/Youssef-NOTHING">Voir le code</a>
-                    <a href="https://github.com/Youssef-NOTHING">Démo</a>
-                </div>
-                <video controls width="100%" poster="/IMAGE/irt.png">
-                    <source src="VIDEO/IRT1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="project">
-                <div class="project-title">WEBSITE USDM</div>
-                <div class="project-description">A brief description of project 1 showcasing my skills and creativity.</div>
-                <div class="project-links">
-                    <a href="https://github.com/Youssef-NOTHING">Voir le code</a>
-                    <a href="https://github.com/Youssef-NOTHING">Démo</a>
-                </div>
-                <video controls width="100%" poster="/IMAGE/usdm.png">
-                    <source src="VIDEO/USDM.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            
-            <div class="project">
-                <div class="project-title">WEBSITE COACH</div>
-                <div class="project-description">A brief description of project 3 emphasizing the impact and results achieved.</div>
-                <div class="project-links">
-                    <a href="https://github.com/Youssef-NOTHING">Voir le code</a>
-                    <a href="https://github.com/Youssef-NOTHING">Démo</a>
-                </div>
-                <video controls width="100%" poster="/IMAGE/coach.png">
-                    <source src="VIDEO/COACH.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <!-- Cercles animés pour le background -->
-            <div class="animated-bg-circle circle1"></div>
-            <div class="animated-bg-circle circle2"></div>
-            <div class="animated-bg-circle circle3"></div>
-            <div class="animated-bg-circle circle4"></div>
-            <h2>Contact Me</h2>
-            <form id="contact-form" action="https://formspree.io/f/xqalrwqy" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div class="social-links" style="margin-top:2rem; text-align:center;">
-                <a href="https://github.com/Youssef-NOTHING" target="_blank">
-                    <img src="/IMAGE/GITHUB.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/youssef-boukhmiss-8285a6342/" target="_blank">
-                    <img src="/IMAGE/LINKEDIN.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/nothinghoops/" target="_blank">
-                    <img src="/IMAGE/INSTAGRAM.png" alt="Instagram">
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 My Impressive Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <button id="theme-toggle">🌙</button>
 
-    <script src="scripts/main.js"></script>
+<!-- ABOUT -->
+<section id="about">
+<h2>À propos de moi</h2>
+<div class="about">
+<img src="https://via.placeholder.com/300" alt="Youssef">
+<div class="text">
+<p>Je suis un développeur passionné, spécialisé dans la création de sites web modernes et interactifs. J’aime allier créativité et technologie pour offrir des expériences uniques aux utilisateurs.</p>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Compétences</h2>
+<div class="skills">
+<div class="skill-card" data-percent="90"><h3>HTML</h3>
+<svg width="100" height="100"><circle cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-card" data-percent="85"><h3>CSS</h3>
+<svg width="100" height="100"><circle cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-card" data-percent="75"><h3>JavaScript</h3>
+<svg width="100" height="100"><circle cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-card" data-percent="70"><h3>React.js</h3>
+<svg width="100" height="100"><circle cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+<div class="percent">0%</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Services</h2>
+<div class="services">
+<div class="service-card"><i>💻</i><h3>Développement Web</h3><p>Sites modernes et performants.</p></div>
+<div class="service-card"><i>🎨</i><h3>UI/UX Design</h3><p>Design créatif et intuitif.</p></div>
+<div class="service-card"><i>⚡</i><h3>Optimisation</h3><p>Performance et SEO boosté.</p></div>
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+<h2>Parcours</h2>
+<div class="timeline">
+<div class="timeline-item left"><h3>2020 - 2022</h3><p>Études en prépa et projets web.</p></div>
+<div class="timeline-item right"><h3>2022 - 2025</h3><p>École d’ingénieurs, spécialité IA.</p></div>
+<div class="timeline-item left"><h3>2025 - ...</h3><p>Développement de projets et stage pro.</p></div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2>Portfolio</h2>
+<div class="portfolio">
+<div class="portfolio-card"><img src="https://via.placeholder.com/250x150" alt="Projet 1"><div class="desc"><h3>Projet 1</h3><p>Site interactif</p></div></div>
+<div class="portfolio-card"><img src="https://via.placeholder.com/250x150" alt="Projet 2"><div class="desc"><h3>Projet 2</h3><p>Application React</p></div></div>
+<div class="portfolio-card"><img src="https://via.placeholder.com/250x150" alt="Projet 3"><div class="desc"><h3>Projet 3</h3><p>Design UI/UX</p></div></div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+<h2>Testimonials</h2>
+<div class="testimonials">
+<div class="testimonial-slide">
+<div class="testimonial"><p>"Excellent développeur, très créatif et professionnel."</p><h4>Client A</h4></div>
+<div class="testimonial"><p>"Travail rapide et de qualité, je recommande."</p><h4>Client B</h4></div>
+<div class="testimonial"><p>"Portfolio impressionnant et projets très réussis."</p><h4>Client C</h4></div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<form>
+<input type="text" placeholder="Nom" required>
+<input type="email" placeholder="Email" required>
+<textarea rows="5" placeholder="Message" required></textarea>
+<button type="submit">Envoyer</button>
+</form>
+</div>
+</section>
+
+<footer>&copy; 2025 Youssef | Portfolio Ultra-Pro</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
