@@ -131,9 +131,10 @@ h2::after{content:'';width:60px;height:3px;background:var(--primary);display:blo
 footer{text-align:center;padding:20px;background:var(--card);}
 /* Testimonials responsive */
 .testimonials {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
+    position: relative;
   }
 
   .testimonials h2 {
@@ -142,25 +143,20 @@ footer{text-align:center;padding:20px;background:var(--card);}
     margin-bottom: 40px;
   }
 
-  .testimonial-cards {
+  .testimonial-carousel {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    overflow: hidden;
+    position: relative;
   }
 
   .testimonial-card {
-    background-color: #fff;
+    min-width: 100%;
     padding: 25px 20px;
+    box-sizing: border-box;
     border-radius: 15px;
+    background-color: #fff;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    max-width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease;
   }
 
   .testimonial-message {
@@ -174,6 +170,7 @@ footer{text-align:center;padding:20px;background:var(--card);}
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
   }
 
   .user-info img {
@@ -189,12 +186,33 @@ footer{text-align:center;padding:20px;background:var(--card);}
     color: #333;
   }
 
-  /* Responsive */
+  /* Navigation arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #4e89ff;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .arrow-left {
+    left: -20px;
+  }
+
+  .arrow-right {
+    right: -20px;
+  }
+
   @media (max-width: 768px) {
-    .testimonial-cards {
-      flex-direction: column;
-      align-items: center;
-    }
+    .arrow-left { left: 10px; }
+    .arrow-right { right: 10px; }
   }
 .portfolio{
   display:flex;
