@@ -22,4 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
             navUl.classList.remove('open');
         });
     }
+
+    document.getElementById('theme-toggle').onclick = function() {
+        document.body.classList.toggle('dark-mode');
+    };
 });
