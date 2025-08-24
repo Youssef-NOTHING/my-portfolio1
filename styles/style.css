@@ -336,6 +336,13 @@ footer{text-align:center;padding:20px;background:var(--card);}
   }
 }
 
+.hero-photo-shape img {
+  animation: zoom 10s infinite alternate ease-in-out;
+}
+@keyframes zoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.1); }
+}
 
 @media (max-width: 768px) {
   .testimonial-card {
