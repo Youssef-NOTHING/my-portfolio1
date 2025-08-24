@@ -40,21 +40,11 @@ header nav ul.nav-links{
   transition:0.3s;
 }
 header nav ul.nav-links li a:hover{color:var(--primary);}
-/* Mobile default: hidden */
-.nav-links {
-  display: none;
+.nav-toggle{
+  display:none;
+  cursor:pointer;
+  font-size:1.5rem;
 }
-
-/* Shown when active */
-.nav-links.active {
-  display: block;
-}
-
-/* Optional: prevent body scroll when menu open (mobile drawers) */
-.no-scroll {
-  overflow: hidden;
-}
-
 @media(max-width:768px){
   header nav ul.nav-links{
     position:absolute;
@@ -101,11 +91,13 @@ h2::after{content:'';width:60px;height:3px;background:var(--primary);display:blo
 .about{display:flex;align-items:center;gap:30px;justify-content:center;flex-wrap:wrap;}
 .about .text{max-width:500px;text-align:left;}
 .about img {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
+  width:250px;
+  height:250px;
+  object-fit:cover;
+  border-radius:50%;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
 .about img:hover{transform:scale(1.05);}
 
 /* SKILLS */
